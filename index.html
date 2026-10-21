@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nabil Kaindra Budiantana — Culinary Arts &amp; Digital Creative</title>
+  <meta name="description" content="Portfolio of Nabil Kaindra Budiantana, a Culinary Arts student in Tanjungpinang combining graphic design, web development and pastry fundamentals.">
+  <meta name="theme-color" content="#101827">
+  <meta property="og:title" content="Nabil Kaindra Budiantana — Portfolio">
+  <meta property="og:description" content="Designer's eye. Cook's discipline. Culinary arts, graphic design and front-end development.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon placeholder: replace with images/favicon.svg or favicon.png later -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23101827'/%3E%3Ctext x='16' y='23' font-family='serif' font-size='20' text-anchor='middle' fill='%2391A9C9'%3EN%3C/text%3E%3C/svg%3E">
+
+  <!-- Fonts: Instrument Serif (headlines) + Inter (body, nav, metadata) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Main">
+      <a href="#hero" class="nav__brand">Nabil Kaindra</a>
+
+      <div class="nav__panel" id="nav-panel">
+        <ul class="nav__list">
+          <li><a href="#hero" class="nav__link" data-i18n="nav_home">Home</a></li>
+          <li><a href="#about" class="nav__link" data-i18n="nav_about">About</a></li>
+          <li><a href="#work" class="nav__link" data-i18n="nav_work">Selected Work</a></li>
+          <li><a href="#skills" class="nav__link" data-i18n="nav_skills">Skills</a></li>
+          <li><a href="#experience" class="nav__link" data-i18n="nav_experience">Experience</a></li>
+          <li><a href="#contact" class="nav__link" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="nav__tools">
+        <!-- Language toggle: wired up in Stage 4 -->
+        <button type="button" class="lang-toggle" id="lang-toggle" aria-label="Switch language to Indonesian">
+          <span data-lang-label="en" aria-hidden="true">EN</span>
+          <span class="lang-toggle__sep" aria-hidden="true">/</span>
+          <span data-lang-label="id" aria-hidden="true">ID</span>
+        </button>
+        <button type="button" class="nav__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-panel" aria-label="Open menu">
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ 01 HERO ============ -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <p class="label hero__label reveal">
+          <span class="label__dot" aria-hidden="true"></span>
+          <!-- EDIT: location / availability -->
+          <span data-i18n="hero_label">Tanjungpinang, Indonesia ·</span>
+        </p>
+
+        <h1 class="hero__title reveal" id="hero-title">
+          <span data-i18n="hero_title_1">Designer's eye.</span>
+          <em data-i18n="hero_title_2">Cook's discipline.</em>
+        </h1>
+
+        <div class="hero__lower">
+          <div class="hero__copy reveal">
+            <p class="hero__intro" data-i18n="hero_intro">
+              I'm Nabil, a Culinary Arts student who also designs, builds and manages websites. I like work where careful preparation shows in the final result, whether that's a plated dessert or a clean layout.
+            </p>
+            <div class="hero__actions">
+              <a href="#work" class="btn btn--primary" data-i18n="hero_cta_work">View projects</a>
+              <a href="#contact" class="link-arrow" data-i18n="hero_cta_contact">Get in touch</a>
+            </div>
+          </div>
+
+          <!-- Signature element: rotating circular text badge -->
+          <div class="badge reveal" aria-hidden="true">
+            <svg class="badge__svg" viewBox="0 0 200 200" focusable="false">
+              <defs>
+                <path id="badge-circle" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/>
+              </defs>
+              <text class="badge__text">
+                <textPath href="#badge-circle" startOffset="0">CULINARY · CODE · CRAFT · DESIGN · PASTRY · WEB ·</textPath>
+              </text>
+            </svg>
+            <span class="badge__core">NK</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__grid-lines" aria-hidden="true"></div>
+    </section>
+
+    <!-- ============ 02 ABOUT ============ -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__num">02</span>
+          <h2 class="section__title" id="about-title" data-i18n="about_title">About</h2>
+        </header>
+
+        <div class="about__grid">
+          <figure class="portrait reveal">
+            <!-- To use a real photo: add images/portrait.jpg and replace the placeholder div with
+                 <img src="images/portrait.jpg" alt="Portrait of Nabil Kaindra" width="640" height="800" loading="lazy"> -->
+               <img src="images/portrait.jpg" alt="Portrait of Nabil Kaindra" width="640" height="800" loading="lazy">
+            <figcaption class="label" data-i18n="portrait_cap">Nabil Kaindra Budiantana</figcaption>
+          </figure>
+
+          <div class="about__copy reveal">
+            <p class="about__lead" data-i18n="about_lead">
+              I started in software engineering and moved into the kitchen. Now I work between the two.
+            </p>
+            <p data-i18n="about_p1">
+              I'm studying D3 Culinary Arts at Politeknik Bintan Cakrawala, with practical experience in kitchen operations, food quality checking and food and beverage service. I'm building my pastry and baking fundamentals and want to learn from experienced pastry chefs.
+            </p>
+            <p data-i18n="about_p2">
+              Before that, I studied Software Engineering at SMKN 4 Tanjungpinang Timur. I still design in Canva, write front-end code and manage websites, and I led the Kominfo (communication and information) team at BEM PBC. I bring the same habits to both worlds: clean workflow, attention to detail, and respect for the team around me.
+            </p>
+            <dl class="facts">
+              <div>
+                <dt data-i18n="facts_studying">Studying</dt>
+                <dd data-i18n="facts_studying_v">D3 Culinary Arts</dd>
+              </div>
+              <div>
+                <dt data-i18n="facts_based">Based in</dt>
+                <dd data-i18n="facts_based_v">Tanjungpinang</dd>
+              </div>
+              <div>
+                <dt data-i18n="facts_lang">Languages</dt>
+                <dd data-i18n="facts_lang_v">Indonesian, English</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 03 SELECTED WORK ============ -->
+    <section class="section work" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__num">03</span>
+          <h2 class="section__title" id="work-title" data-i18n="work_title">Selected Work</h2>
+        </header>
+        <p class="section__note reveal" data-i18n="work_note">
+          The four entries below are sample placeholders. Real projects will replace them as they're added.
+        </p>
+
+        <div class="work__grid">
+
+          <!-- PROJECT 1 -->
+          <article class="project reveal">
+            <a href="#" class="project__link" data-placeholder aria-labelledby="p1-title">
+              <div class="project__thumb project__thumb--1" aria-hidden="true">
+                <span class="project__ph" data-i18n="ph_label">Placeholder image</span>
+              </div>
+              <div class="project__body">
+                <div class="project__meta">
+                  <span class="project__index">01</span>
+                  <span class="project__cat" data-i18n="p1_cat">Graphic Design</span>
+                </div>
+                <h3 class="project__title" id="p1-title" data-i18n="p1_title">Sample Project Title</h3>
+                <p class="project__desc" data-i18n="p1_desc">Placeholder: posters, social media layouts or brand materials made in Canva.</p>
+                <p class="project__tools"><span data-i18n="tools_label">Tools</span>: Canva, layout design</p>
+                <span class="project__cta"><span data-i18n="view_details">View details</span> <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+          </article>
+
+          <!-- PROJECT 2 -->
+          <article class="project project--offset reveal">
+            <a href="#" class="project__link" data-placeholder aria-labelledby="p2-title">
+              <div class="project__thumb project__thumb--2" aria-hidden="true">
+                <span class="project__ph" data-i18n="ph_label">Placeholder image</span>
+              </div>
+              <div class="project__body">
+                <div class="project__meta">
+                  <span class="project__index">02</span>
+                  <span class="project__cat" data-i18n="p2_cat">Web Development &amp; Website Management</span>
+                </div>
+                <h3 class="project__title" id="p2-title" data-i18n="p2_title">Sample Project Title</h3>
+                <p class="project__desc" data-i18n="p2_desc">Placeholder: a responsive website built or maintained, such as this portfolio or a campus project.</p>
+                <p class="project__tools"><span data-i18n="tools_label">Tools</span>: HTML, CSS, JavaScript, Laravel</p>
+                <span class="project__cta"><span data-i18n="view_details">View details</span> <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+          </article>
+
+          <!-- PROJECT 3 -->
+          <article class="project reveal">
+            <a href="#" class="project__link" data-placeholder aria-labelledby="p3-title">
+              <div class="project__thumb project__thumb--3" aria-hidden="true">
+                <span class="project__ph" data-i18n="ph_label">Placeholder image</span>
+              </div>
+              <div class="project__body">
+                <div class="project__meta">
+                  <span class="project__index">03</span>
+                  <span class="project__cat" data-i18n="p3_cat">Digital Content &amp; Creative Campaigns</span>
+                </div>
+                <h3 class="project__title" id="p3-title" data-i18n="p3_title">Sample Project Title</h3>
+                <p class="project__desc" data-i18n="p3_desc">Placeholder: content for events or organizations, such as Kominfo work at BEM PBC.</p>
+                <p class="project__tools"><span data-i18n="tools_label">Tools</span>: Canva, visual storytelling</p>
+                <span class="project__cta"><span data-i18n="view_details">View details</span> <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+          </article>
+
+          <!-- PROJECT 4 -->
+          <article class="project project--offset reveal">
+            <a href="#" class="project__link" data-placeholder aria-labelledby="p4-title">
+              <div class="project__thumb project__thumb--4" aria-hidden="true">
+                <span class="project__ph" data-i18n="ph_label">Placeholder image</span>
+              </div>
+              <div class="project__body">
+                <div class="project__meta">
+                  <span class="project__index">04</span>
+                  <span class="project__cat" data-i18n="p4_cat">Culinary Arts &amp; Pastry</span>
+                </div>
+                <h3 class="project__title" id="p4-title" data-i18n="p4_title">Sample Project Title</h3>
+                <p class="project__desc" data-i18n="p4_desc">Placeholder: a plated dessert, baked item or kitchen practical with photos.</p>
+                <p class="project__tools"><span data-i18n="tools_label">Tools</span>: Baking, plating, food hygiene</p>
+                <span class="project__cta"><span data-i18n="view_details">View details</span> <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 04 SKILLS ============ -->
+    <section class="section skills" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__num">04</span>
+          <h2 class="section__title" id="skills-title" data-i18n="skills_title">Skills</h2>
+        </header>
+
+        <div class="skills__grid">
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title" data-i18n="sk_design">Design</h3>
+            <ul class="skill-list">
+              <li data-i18n="sk_design_1">Canva</li>
+              <li data-i18n="sk_design_2">Layout design</li>
+              <li data-i18n="sk_design_3">Visual communication</li>
+              <li data-i18n="sk_design_4">Digital design</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title" data-i18n="sk_web">Web</h3>
+            <ul class="skill-list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Laravel</li>
+              <li data-i18n="sk_web_5">Website management</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title" data-i18n="sk_content">Content</h3>
+            <ul class="skill-list">
+              <li data-i18n="sk_content_1">Digital content creation</li>
+              <li data-i18n="sk_content_2">Visual storytelling</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title" data-i18n="sk_culinary">Culinary</h3>
+            <ul class="skill-list">
+              <li data-i18n="sk_culinary_1">Food preparation</li>
+              <li data-i18n="sk_culinary_2">Kitchen workflow</li>
+              <li data-i18n="sk_culinary_3">Pastry fundamentals</li>
+              <li data-i18n="sk_culinary_4">Food quality checking</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="skills__also reveal">
+          <span class="label" data-i18n="sk_also">Also</span>
+          <span data-i18n="sk_also_v">Teamwork and coordination · Leadership</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ 05 EXPERIENCE & EDUCATION ============ -->
+    <section class="section experience" id="experience" aria-labelledby="exp-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__num">05</span>
+          <h2 class="section__title" id="exp-title" data-i18n="exp_title">Experience &amp; Education</h2>
+        </header>
+
+        <div class="experience__cols">
+
+          <!-- Education -->
+          <div class="reveal">
+            <h3 class="label experience__sub" data-i18n="edu_title">Education</h3>
+            <ol class="timeline">
+              <li class="timeline__row">
+                <span class="timeline__date">2025 – <span data-i18n="present">Present</span></span>
+                <div class="timeline__what">
+                  <h4 data-i18n="edu1_t">D3 Culinary Arts</h4>
+                  <p>Politeknik Bintan Cakrawala</p>
+                </div>
+              </li>
+              <li class="timeline__row">
+                <span class="timeline__date">2022 – 2025</span>
+                <div class="timeline__what">
+                  <h4 data-i18n="edu2_t">Software Engineering</h4>
+                  <p>SMKN 4 Tanjungpinang Timur</p>
+                </div>
+              </li>
+            </ol>
+
+            <h3 class="label experience__sub" style="margin-top: var(--s-8)">Volunteer</h3>
+            <ol class="timeline">
+                <li class="timeline__row">
+                    <span class="timeline__date">Oct 2026</span>
+                    <div class="timeline__what">
+                        <h4 data-i18n="x5_t">Volunteer, Bike Deposit Team</h4>
+                        <p>Triathlon</p>
+                    </div>
+                </li>
+                <li class="timeline__row">
+                    <span class="timeline__date">Aug 2026</span>
+                    <div class="timeline__what">
+                        <h4 data-i18n="x6_t">Volunteer, Race Pack Collection</h4>
+                        <p>Tour de Bintan</p>
+                    </div>
+                </li>
+                <li class="timeline__row">
+                    <span class="timeline__date">Nov 2025</span>
+                    <div class="timeline__what">
+                        <h4 data-i18n="x6_t">Volunteer, Marshal</h4>
+                        <p>Mandiri Bintan Marathon</p>
+                    </div>
+                </li>
+            </ol>
+            </div>
+
+          <!-- Experience -->
+          <div class="reveal">
+            <h3 class="label experience__sub" data-i18n="work_exp_title">Work</h3>
+            <ol class="timeline">
+              <!-- EDIT: confirm dates; entries are copied from your resume -->
+              <li class="timeline__row">
+                <span class="timeline__date">Feb 2026 – Jan 2027</span>
+                <div class="timeline__what">
+                  <h4 data-i18n="x1_t">Quality Checker</h4>
+                  <p>Cakrawala Culinary</p>
+                </div>
+              </li>
+              <li class="timeline__row">
+                <span class="timeline__date">Apr – Jun 2026</span>
+                <div class="timeline__what">
+                  <h4 data-i18n="x2_t">F&amp;B Service, Pastry and Main Kitchen</h4>
+                  <p>Open Resto</p>
+                </div>
+              </li>
+              <li class="timeline__row">
+                <span class="timeline__date" data-i18n="x3_d">Jan 2026</span>
+                <div class="timeline__what">
+                  <h4 data-i18n="x3_t">Cook Helper</h4>
+                  <p>Dies Natalis Politeknik Bintan Cakrawala</p>
+                </div>
+              </li>
+              <li class="timeline__row">
+                <span class="timeline__date">Dec 2025 – Dec 2026</span>
+                <div class="timeline__what">
+                  <h4 data-i18n="x4_t">Kominfo Team Leader</h4>
+                  <p>BEM PBC</p>
+                </div>
+              </li>
+              <li class="timeline__row">
+                <span class="timeline__date">Aug 2026</span>
+                <div class="timeline__what">
+                  <h4 data-i18n="x7_t">Warmindo Dailyworker</h4>
+                  <p>PT. BRC Lagoi Bay</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 06 CONTACT ============ -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__num">06</span>
+          <h2 class="section__title" id="contact-title" data-i18n="contact_title">Contact</h2>
+        </header>
+
+        <p class="contact__lead reveal" data-i18n="contact_lead">Open to kitchen and pastry traineeships, and to design or web work that fits around them.</p>
+
+        <a class="contact__email reveal" href="mailto:nabilkaindra13@gmail.com">nabilkaindra13@gmail.com</a>
+
+        <ul class="contact__links reveal">
+          <li><a href="https://github.com/Nabil-Kaindra" target="_blank" rel="noopener noreferrer" class="link-arrow">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/nabil-kaindra" target="_blank" rel="noopener noreferrer" class="link-arrow">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/billyneedmeds" target="_blank" rel="noopener noreferrer" class="link-arrow">Instagram</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer__row">
+      <p>© <span id="year">2026</span> Nabil Kaindra Budiantana</p>
+      <a href="" class="link-arrow footer__top" data-i18n="back_top">Back to top</a>
+    </div>
+  </footer>
+</body>
+</html>
